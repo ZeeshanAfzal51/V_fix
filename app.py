@@ -62,7 +62,7 @@ if pdf_files and excel_file:
         images = convert_from_bytes(pdf_stream.read())  # Use convert_from_bytes
         ocr_results = [pytesseract.image_to_string(image) for image in images]
         return ocr_results
-     Combines the text extracted directly from the PDF and the OCR results into a single string.
+     # Combines the text extracted directly from the PDF and the OCR results into a single string.
     def combine_text_and_ocr_results(text_data, ocr_results):
         combined_results = []
         for text, ocr_text in zip(text_data, ocr_results):
