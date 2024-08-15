@@ -116,7 +116,7 @@ python
 
         
         # Combine the prompt and the extracted text
-    input_text = f"{prompt}\n\n{combined_text}"
+        input_text = f"{prompt}\n\n{combined_text}"
 
         # Creating the model configuration
         generation_config = {
